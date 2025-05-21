@@ -1,0 +1,140 @@
+@media only screen and (max-width: 1024px) {
+    .contenido,
+    .encabezado,
+    .pieDePagina {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pieDePagina {
+        flex-direction: row;
+    }
+
+    .enlace-con-imagen img {
+        max-width: 200px;
+    }
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF; /* Texto general en blanco para buena visibilidad */
+}
+
+/* Encabezado */
+header.encabezado {
+    background-color: #2C3E50;
+    text-align: center;
+    padding: 20px;
+}
+
+#titulo {
+    color: #FFFFFF; /* Color para los títulos */
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Menú de navegación */
+nav#menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav#menu ul li {
+  
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav#menu ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav#menu ul li:hover {
+    background-color: #02FDFD; /* Color cuando se pasa el mouse por encima */
+    color: #1A243A;
+}
+
+/* Contenido principal */
+.contenido {
+    text-align: center;
+    padding: 30px;
+}
+
+.contenido h2 {
+    background-color :#e5a0c6  ;
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+.contenido p {
+    background-color :#e5a0c6  ;
+    font-size: 1.2em;
+    margin: 15px auto;
+    width: 80%;
+}
+
+/* Imagen */
+.enlace-con-imagen img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.enlace-con-imagen img:hover {
+    transform: scale(1.05);
+}
+
+.opciones li:hover{
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #02FDFD; /* Color cuando se pasa el mouse por encima */
+    color: #1A243A;
+    }
+
+    .video_contenido {
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    margin: auto; /* Centra horizontalmente */
+    text-align: center; /* Centra el contenido de texto */
+}
+
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 10px 0;
+}
+
+footer ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
